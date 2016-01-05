@@ -9,7 +9,8 @@ Pod::Spec.new do |s|
     :git => 'https://github.com/jacksonh/OcticonsIOS.git',
     :tag => 'v0.0.2'
   }
-  s.platform     = :ios, '7.0'
+  s.ios.deployment_target = '8.0'
+  s.tvos.deployment_target = '9.0'
   s.source_files = 'OcticonsIOS/*.{h,m}'
   s.exclude_files = 'OcticonsIOS/SNTX*.{h,m}', 'OcticonsIOS/main.m'
   s.resources = "OcticonsIOS/octicons.ttf"
